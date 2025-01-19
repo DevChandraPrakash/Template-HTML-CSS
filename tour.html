@@ -1,0 +1,2249 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100%;
+            min-height: 100%;
+            background-color: white;
+            box-sizing: border-box;
+
+        }
+
+        .logo {
+            height: 50px;
+            width: 40%;
+            /* background-color: ; */
+            box-sizing: border-box;
+        }
+
+        .poster {
+            height: 300px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        .poster1 {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .searchbox {
+            height: 60px;
+            width: 50%;
+            background-color: white;
+            display: flex;
+            position: absolute;
+            top: 260px;
+            left: 25%;
+            border-radius: 50px;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .input1 {
+
+            height: 100%;
+            width: 73%;
+            border-radius: 50px;
+            box-sizing: border-box;
+        }
+
+        .input2 {
+
+            height: 100%;
+            width: 100%;
+            border-radius: 50px;
+            border: hidden;
+            box-sizing: border-box;
+        }
+
+        .textsearch {
+            height: 90%;
+            width: 25%;
+            box-sizing: border-box;
+            background-color: #4ebd19;
+            border-radius: 50px;
+            position: relative;
+            top: 5%;
+            left: 1.25%;
+            color: white;
+            font-size: 22px;
+            padding-top: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        .textcontent {
+
+            min-height: 250px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+
+        }
+
+        .readmore {
+            position: relative;
+            left: 75%;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            overflow: hidden;
+            font-family: sans-serif;
+
+        }
+
+        .heading {
+            font-family: sans-serif;
+            box-sizing: border-box;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .span1 {
+
+            color: tomato;
+        }
+
+        .textparaghraph {
+
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        .imgbox {
+
+            height: 300px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: white;
+
+
+        }
+
+        .imgheading {
+
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            font-family: sans-serif;
+
+        }
+
+        .image {
+
+            height: 250px;
+            width: 100%;
+            /* background-color: ; */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .img1 {
+
+            height: 90%;
+            width: 30%;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+
+        }
+
+        .mlogobox {
+
+            height: 250px;
+            width: 100%;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+
+
+        }
+
+        .logoheading {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 27px;
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+
+        .logobox {
+            height: 100px;
+            width: 95%;
+            /* background-color: ; */
+            box-sizing: border-box;
+            position: relative;
+            left: 2.5%;
+            top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .logo1 {
+
+            height: 100%;
+            width: 10%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid;
+        }
+
+        .logo2 {
+
+            height: 80%;
+            width: 100%;
+            box-sizing: border-box;
+            /* background-color: ; */
+        }
+
+        .logotext {
+
+            height: 20%;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            overflow: hidden;
+            /* background-color:; */
+            font-family: sans-serif;
+        }
+
+        .mainlogo {
+
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        .viewallthemes {
+
+            height: 40px;
+            width: 12%;
+            box-sizing: border-box;
+            background-color: #4ebd19;
+            position: relative;
+            text-align: center;
+            top: 50px;
+            left: 45%;
+            padding: 10px;
+            border-radius: 50px;
+            color: white;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .photogallery1 {
+            height: 500px;
+            width: 100%;
+            box-sizing: border-box;
+            /* background-color: ; */
+
+        }
+
+        .photoheading {
+            font-family: sans-serif;
+            padding-top: 20px;
+            box-sizing: border-box;
+            /* background-color: ; */
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        .photobox {
+            height: 330px;
+            width: 95%;
+            /* background-color: ; */
+            position: relative;
+            left: 2.5%;
+            top: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+        .photo1 {
+
+            height: 100%;
+            width: 18%;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .mainimg {
+
+            height: 80%;
+            width: 100%;
+            /* background-color: ; */
+            box-sizing: border-box;
+            border-radius: 10px;
+
+        }
+
+        .imgtext {
+
+            height: 20%;
+            width: 100%;
+            box-sizing: border-box;
+            /* background-color: ; */
+            text-align: center;
+
+        }
+
+        .img3 {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+
+
+        }
+
+        .para {
+            color: silver;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        .anc {
+            color: black;
+            overflow: hidden;
+            font-size: 15px;
+            padding-top: 5px;
+            font-family: sans-serif;
+        }
+
+        .viewall {
+
+            height: 40px;
+            width: 12%;
+            position: relative;
+            left: 45%;
+            top: 30px;
+            ;
+            box-sizing: border-box;
+            border-radius: 50px;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #4ebd19;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .contener {
+
+            height: 520px;
+            width: 100%;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+
+
+        .heading1 {
+            padding-top: 15px;
+            font-size: 25px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .paramiter {
+            height: 70px;
+            width: 100%;
+            padding-top: 10px;
+            font-size: 18px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .imagebox2 {
+
+            height: 300px;
+            width: 95%;
+            position: relative;
+            left: 2.5%;
+            top: 20px;
+            /* background-color:; */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mainimagebox {
+
+            height: 300px;
+            width: 22%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid silver;
+            /* background-color: ; */
+        }
+
+        .offer {
+            height: 25%;
+            width: 6.5%;
+            box-sizing: border-box;
+            border-radius: 50px;
+            position: absolute;
+            top: 160px;
+            left: 10%;
+            background-color: #fc3435;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        .offer1 {
+            height: 25%;
+            width: 6.5%;
+            box-sizing: border-box;
+            border-radius: 50px;
+            position: absolute;
+            top: 160px;
+            left: 34%;
+            background-color: #fc3435;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        .offer2 {
+            height: 25%;
+            width: 6.5%;
+            box-sizing: border-box;
+            border-radius: 50px;
+            position: absolute;
+            top: 160px;
+            left: 59%;
+            background-color: #fc3435;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            overflow: hidden;
+        }
+
+        .offer3 {
+            height: 25%;
+            width: 6.5%;
+            box-sizing: border-box;
+            border-radius: 50px;
+            position: absolute;
+            top: 160px;
+            left: 83.5%;
+            background-color: #fc3435;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            overflow: hidden;
+            font-size: 12px;
+
+        }
+
+        .imgbox1 {
+
+            height: 70%;
+            width: 100%;
+            box-sizing: border-box;
+            /* background-color:; */
+
+        }
+
+        .imgtext1 {
+            height: 30%;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 5px;
+
+        }
+
+        .poster11 {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+        }
+
+        .headingimg {
+            text-align: center;
+            font-size: 13px;
+            padding-top: 25px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            overflow: hidden;
+
+        }
+
+        .headingimg1 {
+            text-align: center;
+            font-size: 11px;
+            padding-top: 5px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+
+        .headingimg2 {
+            text-align: center;
+            font-size: 15px;
+            padding-top: 5px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+
+        .contener1 {
+
+            height: 400px;
+            width: 100%;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .contener11 {
+
+            height: 400px;
+            width: 100%;
+            /* background-color: ; */
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .contener-box {
+
+            height: 300px;
+            width: 100%;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+
+        .contener-text {
+
+            font-size: 30px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .contener1-box {
+            height: 200px;
+            width: 90%;
+            box-sizing: border-box;
+            position: relative;
+            top: 20px;
+            left: 5%;
+            /* background-color: ; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .small-contener {
+            height: 100%;
+            width: 18%;
+            background-color: black;
+            border-radius: 50%;
+            border: 10px solid;
+            border-top-color: tomato;
+            border-left-color: tomato;
+            border-bottom-color: green;
+            border-right-color: green;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 60px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        .contener2 {
+
+            height: 400px;
+            width: 100%;
+            /* background-color: ; */
+            box-sizing: border-box;
+        }
+
+        .contener2-heading {
+
+            font-size: 30px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        .contener2-top {
+            height: 250px;
+            width: 95%;
+            box-sizing: border-box;
+            position: relative;
+            top: 40px;
+            left: 2.5%;
+            /* background-color: ; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contener2-img-box {
+
+            height: 100%;
+            width: 15%;
+            /* background-color:; */
+            box-sizing: border-box;
+        }
+
+        .contener2-img {
+            height: 90%;
+            width: 100%;
+            /* background-color:; */
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .contener2-text {
+            height: 10%;
+            width: 100%;
+            background-color: white;
+            box-sizing: border-box;
+            /* border-radius:; */
+            text-align: center;
+            padding-top: 3px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener3 {
+            height: 400px;
+            width: 100%;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+
+        }
+
+        .contener3-heading {
+
+            box-sizing: border-box;
+            font-size: 30px;
+            text-align: center;
+            font-family: sans-serif;
+            padding-top: 20px;
+            overflow: hidden;
+        }
+
+        .contener3-box {
+            height: 250px;
+            width: 95%;
+            /* background-color: ; */
+            box-sizing: border-box;
+            position: relative;
+            top: 20px;
+            left: 2.5%;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .contener3-small {
+
+            height: 100%;
+            width: 30%;
+            /* background-color: ; */
+            box-sizing: border-box;
+        }
+
+        .contener3-extra-small {
+
+            height: 50%;
+            width: 100%;
+            /* background-color:; */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .contener3-img-box{
+            height: 60px;
+            width:45px;
+            box-sizing: border-box;
+            /* background-color: ; */
+            position: relative;
+            top: 10px;
+           
+        }
+
+        .contener3-text1 {
+            font-size: 20px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            padding-top: 10px;
+            /* background-color: ; */
+            overflow: hidden;
+        }
+
+        .contener3-text2 {
+            font-size: 15px;
+            box-sizing: border-box;
+            /* background-color: ; */
+            padding-top: 10px;
+            font-family: sans-serif;
+            color: gray;
+            overflow: hidden;
+          
+
+        }
+
+
+
+        .contener3-text-box {
+            height: 100%;
+            width:75%;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+
+        .readmoreaboutus {
+
+            height: 40px;
+            width: 15%;
+            box-sizing: border-box;
+            background-color: #4ebd19;
+            position: relative;
+            text-align: center;
+            top: 20px;
+            left: 42%;
+            padding: 10px;
+            border-radius: 50px;
+            color: white;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+
+        .contener4 {
+
+            height: 500px;
+            width: 100%;
+            /* background-color:; */
+            box-sizing: border-box;
+
+        }
+
+        .contener4-paraghraph1 {
+            font-size: 30px;
+            padding-top: 20px;
+            text-align: center;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .contener4-paraghraph2 {
+            font-size: 20px;
+            padding-top: 5px;
+            text-align: center;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .contener4-mainbox {
+
+            height: 400px;
+            width: 100%;
+            /* background-color:; */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .contener4-box1 {
+            height: 100%;
+            width: 60%;
+            box-sizing: border-box;
+            /* background-color:; */
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid;
+
+        }
+
+        .contener4-box2 {
+            height: 90%;
+            width: 30%;
+            box-sizing: border-box;
+            /* background-color:; */
+            border-radius: 5px;
+            border: 1px solid;
+        }
+
+        .contener4-imgbox {
+            height: 100px;
+            width: 18%;
+            box-sizing: border-box;
+            /* background-color: ; */
+            position: relative;
+            top: 12px;
+            left: 40%;
+            border-radius: 5px;
+        }
+
+        .contener4-paraghraph3 {
+
+            font-size: 18px;
+            /* padding-top: ; */
+            text-align: center;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+
+        }
+
+
+        .contener4-paraghraph4 {
+            /* font-size: ; */
+            padding: 20px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .contener4-imgbox2 {
+            height: 62%;
+            width: 95%;
+            box-sizing: border-box;
+            position: relative;
+            top: 10px;
+            left: 2.5%;
+            /* background-color:; */
+        }
+
+        .contener4-textbox {
+            height: 30%;
+            width: 95%;
+            box-sizing: border-box;
+            position: relative;
+            top: 20px;
+            left: 2.5%;
+            /* background-color:; */
+            overflow: hidden;
+        }
+
+        .contener4-text1 {
+            font-size: 15px;
+            padding-top: 3%;
+            padding-left: 5%;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            color: gray;
+        }
+
+        .contener4-text2 {
+            font-size: 18px;
+            padding-top: 3%;
+            padding-left: 5%;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .contener4-text3 {
+            font-size: 15px;
+            padding-top: 3%;
+            padding-left: 5%;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            color: gray;
+        }
+
+        .contener5 {
+            height: 200px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+
+        }
+
+        .contener5-heading {
+            font-size: 25px;
+            padding-top: 25px;
+            text-align: center;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .contener5-line {
+            height: 25px;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            top: 65px;
+            background-image: linear-gradient(to right, #ff8000, #ffbf00, #ffff00, #bfff00, #80ff00, #40ff00, #00ff80, #00ffbf, #00ffff, #00bfff, #0080ff, #0040ff);
+        }
+
+        .contener5-largh-box {
+            height: 80px;
+            width: 80%;
+            position: relative;
+            left: 10%;
+            top: 10px;
+            box-sizing: border-box;
+            /* background-color:;  */
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+
+
+        .contener5-box1 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #ff8000;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+
+        }
+
+    
+        .contener5-box2 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #ffbf00;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+
+        .contener5-box3 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #ffff00;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box4 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #bfff00;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box5 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #80ff00;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box6 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #40ff00;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box7 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #00ff80;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box8 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #00ffbf;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box9 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #00ffff;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box10 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #00bfff;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box11 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #0080ff;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener5-box12 {
+            height: 85%;
+            width: 7%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 4px solid #0040ff;
+            background-color: white;
+            position: relative;
+            top: 6px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+            overflow: hidden;
+            color: black;
+        }
+
+        .contener6 {
+            height: 200px;
+            width: 100%;
+            box-sizing: border-box;
+            /* background-color:; */
+            background-image: url('img/5.jpg');
+            color: white;
+
+        }
+
+        .contener6-main-box {
+            height: 100px;
+            width: 85%;
+            position: relative;
+            left: 7.5%;
+            top: 50px;
+            /* background-color: ; */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .contener6-box1 {
+            height: 100px;
+            width: 40%;
+            box-sizing: border-box;
+            /* background-color: ; */
+            overflow: hidden;
+
+        }
+
+        .contener6-paragraph1 {
+            font-size: 25px;
+            padding-top: 3%;
+            /* padding-left:; */
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .contener6-paragraph2 {
+            font-size: 15px;
+            padding-top: 3%;
+            /* padding-left:; */
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+
+        .contener6-box2 {
+            height: 100px;
+            width: 35%;
+            box-sizing: border-box;
+            /* background-color: ; */
+        }
+
+        .contener6-searchbox {
+            height: 40px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: white;
+            position: relative;
+            top: 30px;
+            border-radius: 30px;
+            display: flex;
+
+        }
+
+        .contener6-input-box {
+            height: 100%;
+            width: 60%;
+            box-sizing: border-box;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            /* background-color:; */
+
+        }
+
+        .contener6-input {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            /* background-color:; */
+            border: hidden;
+
+
+        }
+
+        .contener6-sub {
+            height: 100%;
+            width: 40%;
+            box-sizing: border-box;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: tomato;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            overflow: hidden;
+
+        }
+
+        .contener6-box3 {
+            height: 100px;
+            width: 15%;
+            box-sizing: border-box;
+            /* background-color: ; */
+            overflow: hidden;
+        }
+
+        .contener6-text {
+            font-size: 18px;
+            /* padding-top: ; */
+            font-family: sans-serif;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .contener6-logo-box {
+            height: 40px;
+            width: 80%;
+            position: relative;
+            top: 10%;
+            left: 10%;
+            box-sizing: border-box;
+            /* background-color:; */
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .contener6-logo {
+            height: 100%;
+            width: 31%;
+            box-sizing: border-box;
+            /* background-color:; */
+            overflow: hidden;
+            border: 1px solid;
+            border-radius: 50px;
+
+        }
+
+        i {
+            font-size: 25px;
+            padding-left: 20%;
+            padding-top: 7px;
+            box-sizing: border-box;
+
+        }
+
+
+        .contener7 {
+            min-height: 50px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 12px;
+            background-color: #f9f9f9;
+            font-size: 18px;
+            font-family: sans-serif;
+
+
+
+        }
+
+        .a1 {
+            color: black;
+        }
+
+
+        .contener8 {
+            height: 220px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #253c40;
+
+
+        }
+
+        .contener8-main-box {
+            height: 150px;
+            width: 90%;
+            /* background-color:; */
+            position: relative;
+            top: 25px;
+            left: 5%;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+        }
+
+        .contener8-image-box1 {
+            height: 100%;
+            width: 10%;
+            box-sizing: border-box;
+            /* background-color: ; */
+        }
+
+        .contener8-image {
+            height: 90px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        .contener8-image-box2 {
+            height: 100%;
+            width: 23%;
+            box-sizing: border-box;
+            /* background-color:; */
+        }
+
+        .contener8-image2 {
+            height: 40px;
+            width: 80%;
+            box-sizing: border-box;
+
+
+        }
+
+        .contener8-text {
+            font-size: 15px;
+            font-family: sans-serif;
+            color: white;
+            box-sizing: border-box;
+            padding-top: 3px;
+            overflow: hidden;
+        }
+
+
+
+        .contener8-image-box3 {
+            height: 100%;
+            width: 10%;
+            box-sizing: border-box;
+            /* background-color:; */
+        }
+
+        .contener8-image3 {
+            height: 100px;
+            width: 90%;
+            box-sizing: border-box;
+            position: relative;
+            left: 5%;
+        }
+
+        .contener8-image-box4 {
+            height: 100%;
+            width: 23%;
+            box-sizing: border-box;
+            /* background-color:; */
+        }
+
+        .contener8-image4 {
+            height: 80px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        .contener8-image-box5 {
+            height: 100%;
+            width: 28%;
+            box-sizing: border-box;
+            /* background-color:; */
+        }
+
+        .contener8-image5 {
+            height: 80px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+
+        .contener9 {
+            height: 45px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: black;
+            position: fixed;
+            bottom: 0px;
+
+        }
+
+        .contener9-text {
+
+            height: 45px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            font-family: sans-serif;
+            padding-left: 25%;
+            padding-top: 1%;
+            text-overflow: hidden;
+            position: absolute;
+        }
+
+        .contener10-img {
+            height: 65px;
+            width: 20%;
+            box-sizing: border-box;
+            /* background-color:; */
+            position: relative;
+            bottom: 21px;
+            left: 5%;
+        }
+
+
+        .contener5-box1:hover {
+            background-color: #ff8000;
+            color:white;
+        }
+
+        .contener5-box2:hover {
+            background-color:#ffbf00 ;
+            color:white;
+        }
+
+        .contener5-box3:hover {
+            background-color: #ffff00;
+            color:white;
+        }
+
+        .contener5-box4:hover {
+            background-color: #bfff00;
+            color:white;
+        }
+
+        .contener5-box5:hover {
+            background-color:#80ff00 ;
+            color:white;
+        }
+
+        .contener5-box6:hover {
+            background-color:#40ff00 ;
+            color:white;
+        }
+
+        .contener5-box7:hover {
+            background-color:#00ff80 ;
+            color:white;
+        }
+
+        .contener5-box8:hover {
+            background-color:#00ffbf;
+            color:white;
+        }
+
+        .contener5-box9:hover {
+            background-color:#00ffff;
+            color:white;
+        }
+
+        .contener5-box10:hover {
+            background-color:#00bfff;
+            color:white;
+        }
+
+        .contener5-box11:hover {
+            background-color:#0080ff;
+            color:white;
+        }
+
+        .contener5-box12:hover {
+            background-color:#0040ff;
+            color:white;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="logo"><img src="img/logo.png"></div>
+        <div class="poster">
+            <div class="searchbox">
+                <div class="input1"><input type="search" placeholder="Explore Destination,Select themes" class="input2">
+                </div>
+                <a href="#" class="textsearch">
+                    <div>Search</div>
+                </a>
+            </div>
+            <img src="img/home-banner.jpg" class="poster1">
+        </div>
+
+        <div class="textcontent">
+            <p class="heading"><span class="span1">India Tour</span> & Holiday Packages 2022</p>
+
+            <p class="textparaghraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Beatae aliquam sit provident quaerat dolores quae,
+                voluptates porro eveniet dolor reprehenderit minus
+                assumenda doloribus pariatur totam animi, explicabo
+                quos magni commodi, placeat maiores ad! Corporis,
+                reprehenderit saepe id mollitia repellendus, aliquid
+                facere eveniet neque ipsa rem sunt fugiat ratione,
+                ducimus commodi officiis molestiae omnis. Id sapiente
+                soluta facilis excepturi eos iusto, vitae necessitatibus ab.
+                Veniam consequatur tenetur pariatur labore corporis,
+                iste sequi amet optio dolore eaque minima debitis porro
+                delectus temporibus reiciendis error aliquam unde tempora,
+                blanditiis quia saepe iusto. Quis alias sint aliquam laboriosam!
+                Quam hic ex incidunt aperiam ! </p>
+
+            <br><a href="#" class="readmore">Read More+</a>
+        </div>
+
+        <div class="imgbox">
+            <div class="imgheading">Trending Tour Packages in India</div>
+            <div class="image">
+                <img src="img/goa.jpg" alt="" class="img1">
+                <img src="img/kashmir.jpg" alt="" class="img1">
+                <img src="img/himachal.jpg" alt="" class="img1">
+            </div>
+        </div>
+
+        <div class="mlogobox">
+            <div class="logoheading">Holiday By Theme</div>
+            <div class="logobox">
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/taj-mahal.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Golden Triangle</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/family.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Family</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/honymoon.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Honymoon</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/hills.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Hill Station</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/winter.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Winter</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/budget.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Budget</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/himalaya.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Himalaya</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/pilgrimage.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Pilgrimage</div>
+                    </a>
+                </div>
+
+                <div class="logo1">
+                    <a href="#" class="a1">
+                        <div class="logo2"><img src="img/summer.svg" alt="" class="mainlogo"></div>
+                        <div class="logotext">Summer</div>
+                    </a>
+                </div>
+
+            </div>
+            <a href="#">
+                <div class="viewallthemes">View all Themes</div>
+            </a>
+
+        </div>
+
+        <div class="photogallery1">
+            <div class="photoheading"> India Packages by Destination</div>
+
+            <div class="photobox">
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/goa-tour.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Goa</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/uttarakhand-tour.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Uttarakhand</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/jaipur.jpg" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Rajasthan</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/kerala-tour.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Kerala</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/sikkim.jpg" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Sikkim</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="">
+                <div class="viewall">Veiw All</div>
+            </a>
+        </div>
+
+
+
+        <div class="contener">
+            <p class="heading1">Best Selling Tour Packages</p>
+            <p class="paramiter">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati repellat non saepe voluptates repellendus
+                Obcaecati repellat non saepe voluptates repellendus
+                nemo quas enim ullam at voluptatibus.</p>
+
+            <div class="imagebox2">
+
+                <div class="mainimagebox">
+                    <div class="offer">Up to<br><span style="font-size:22px">10%</span><br> Off</div>
+                    <div class="imgbox1">
+                        <img src="img/guwahati-shillong.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Guwahati Shillong Cherrapunji Tour</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+                        <div class="headingimg2"> Price ₹12,500</div>
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer1">Up to<br><span style="font-size:22px">11%</span><br>Off</div>
+                    <div class="imgbox1">
+                        <img src="img/manali-srinagar.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Guwahati Shillong Cherrapunji Tour</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+                        <div class="headingimg2"> Price ₹12,500</div>
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer2">Up to<br><span style="font-size:22px">12%</span><br>Off</div>
+                    <div class="imgbox1">
+                        <img src="img/darjeeling-gangtok.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Guwahati Shillong Cherrapunji Tour</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+                        <div class="headingimg2"> Price ₹12,500</div>
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer3">Up to<br><span style="font-size:22px">15%</span><br> Off</div>
+                    <div class="imgbox1">
+                        <img src="img/goa-vacation.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Guwahati Shillong Cherrapunji Tour</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+                        <div class="headingimg2"> Price ₹12,500</div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#">
+            <div class="viewallthemes">View all order</div>
+        </a>
+        </div>
+
+
+        <div class="photogallery1">
+            <div class="photoheading">International Packages by Destination</div>
+
+            <div class="photobox">
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/thailand-tour.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Thailand</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/dubai-tour.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Dubai</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/indonesia-tour.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Indonesia</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/singapore-tour.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Singapore</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+                <div class="photo1">
+                    <div class="mainimg"><img src="img/maldives-pack.webp" alt="" class="img3"></div>
+                    <div class="imgtext">
+                        <a href="#" class="anc">Maldives</a>
+                        <p class="para">Tour Packages</p>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#">
+                <div class="viewall">Veiw All</div>
+            </a>
+        </div>
+
+
+
+        <div class="contener1">
+            <p class="heading1">International Tour Packages</p>
+
+
+            <div class="imagebox2">
+
+                <div class="mainimagebox">
+                    <div class="offer">Up to<br><span style="font-size:22px">10%</span><br> Off</div>
+                    <div class="imgbox1">
+                        <img src="img/thailand-tour.webp" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Wondrous Thailand Tour</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer1">Up to<br><span style="font-size:22px">11%</span><br>Off</div>
+                    <div class="imgbox1">
+                        <img src="img/dubai-festival.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Magical Dubai</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer2">Up to<br><span style="font-size:22px">12%</span><br>Off</div>
+                    <div class="imgbox1">
+                        <img src="img/honeymoon-in-maldives.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Honeymoon Trip to Maldives</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer3">Up to<br><span style="font-size:22px">15%</span><br> Off</div>
+                    <div class="imgbox1">
+                        <img src="img/thailand-and-malaysia.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Singapore Malaysia Thailand</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contener11">
+            <p class="heading1">Short Escape Trips</p>
+
+
+            <div class="imagebox2">
+
+                <div class="mainimagebox">
+                    <div class="offer">Up to<br><span style="font-size:22px">16%</span><br> Off</div>
+                    <div class="imgbox1">
+                        <img src="img/goa.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">3 Days Trip to Goa</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer1">Up to<br><span style="font-size:22px">15%</span><br>Off</div>
+                    <div class="imgbox1">
+                        <img src="img/corbett.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Corbett Tour</div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer2">Up to<br><span style="font-size:22px">14%</span><br>Off</div>
+                    <div class="imgbox1">
+                        <img src="img/udaipur.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Udaipur Tour
+                        </div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+                <div class="mainimagebox">
+                    <div class="offer3">Up to<br><span style="font-size:22px">18%</span><br> Off</div>
+                    <div class="imgbox1">
+                        <img src="img/kodaikanal.jpg" class="poster11">
+                    </div>
+                    <div class="imgtext1">
+                        <div class="headingimg">Kodaikanal Tour
+                        </div>
+                        <div class="headingimg1">3 Nights / 4 Days</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contener-box">
+
+            <p class="contener-text">India Tour Packages By Duration</p>
+
+            <div class="contener1-box">
+
+                <div class="small-contener">3 - 7 Days <br> Tours</div>
+                <div class="small-contener">8 - 12 Days <br> Tours</div>
+                <div class="small-contener">13 - 15 Days <br>Tours</div>
+                <div class="small-contener">16 - 20 Days <br> Tours</div>
+                <div class="small-contener">21 + Days <br> Tours</div>
+
+            </div>
+        </div>
+
+
+        <div class="contener2">
+            <p class="contener2-heading">Packages by Region</p>
+
+            <div class="contener2-top">
+
+                <div class="contener2-img-box">
+                    <div class="contener2-img"><img src="img/west-india.jpg" alt="" class="img3"></div>
+                    <a href="#">
+                        <div class="contener2-text">West India Tours</div>
+                    </a>
+                </div>
+
+                <div class="contener2-img-box">
+                    <div class="contener2-img"><img src="img/south-india.jpg" alt="" class="img3"></div>
+                    <a href="#">
+                        <div class="contener2-text">South India Tours</div>
+                    </a>
+                </div>
+
+                <div class="contener2-img-box">
+                    <div class="contener2-img"><img src="img/northern-india.jpg" alt="" class="img3"></div>
+                    <a href="#">
+                        <div class="contener2-text">North India Tours</div>
+                    </a>
+                </div>
+
+                <div class="contener2-img-box">
+                    <div class="contener2-img"><img src="img/north-east-india.jpg" alt="" class="img3"></div>
+                    <a href="#">
+                        <div class="contener2-text">East India Tours</div>
+                    </a>
+                </div>
+
+                <div class="contener2-img-box">
+                    <div class="contener2-img"><img src="img/north-east.jpg" alt="" class="img3"></div>
+                    <a href="#">
+                        <div class="contener2-text">East India Tours</div>
+                    </a>
+                </div>
+
+                <div class="contener2-img-box">
+                    <div class="contener2-img"><img src="img/taj-mahal.jpg" alt="" class="img3"></div>
+                    <a href="#">
+                        <div class="contener2-text">Central India Tours</div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="contener3">
+            <p class="contener3-heading">Why Tourism of India?</p>
+
+            <div class="contener3-box">
+                <div class="contener3-small">
+                    <div class="contener3-extra-small">
+                        <div class="contener3-img-box"><img src="img/suitcase.svg" alt="" class="mainlogo"></div>
+                        <div class="contener3-text-box">
+                            <div class="contener3-text1"> Experienced</div>
+
+                            <div class="contener3-text2"> Serving satisfied clients for over 31 years.</div>
+                        </div>
+                    </div>
+
+                    <div class="contener3-extra-small">
+
+                        <div class="contener3-img-box"><img src="img/trophy.svg" alt="" class="mainlog"></div>
+                        <div class="contener3-text-box">
+                            <div class="contener3-text1"> Award Winning Company</div>
+
+                            <div class="contener3-text2"> National Tourism Award winning company.</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contener3-small">
+                    <div class="contener3-extra-small">
+                        <div class="contener3-img-box"><img src="img/approved.svg" alt="" class="mainlog"></div>
+                        <div class="contener3-text-box">
+                            <div class="contener3-text1">Approved & Recognized</div>
+
+                            <div class="contener3-text2">Recognized by Ministry of Tourism, Government of India.</div>
+                        </div>
+
+                    </div>
+                    <div class="contener3-extra-small">
+
+                        <div class="contener3-img-box"><img src="img/writing.svg" alt="" class="mainlog"></div>
+                        <div class="contener3-text-box">
+                            <div class="contener3-text1">100% Tailor Made</div>
+
+                            <div class="contener3-text2">Customized tour itineraries the way you want.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contener3-small">
+                    <div class="contener3-extra-small">
+                        <div class="contener3-img-box"><img src="img/testimonials.svg" alt="" class="mainlog"></div>
+                        <div class="contener3-text-box">
+                            <div class="contener3-text1">1000+ Customer Review</div>
+
+                            <div class="contener3-text2">Read what our clients say about us<br><a href="#"> more
+                                    testimonials =></a> </div>
+                        </div>
+
+                    </div>
+                    <div class="contener3-extra-small">
+
+                        <div class="contener3-img-box"><img src="img/24-hours.svg" alt="" class="mainlog"></div>
+                        <div class="contener3-text-box">
+                            <div class="contener3-text1">24*7 Availability</div>
+
+                            <div class="contener3-text2">We are available round the clock to help you in Emergency</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+             <a href="#">
+            <div class="readmoreaboutus">Read More About Us</div>
+        </a>
+        </div>
+
+
+        <div class="contener4">
+            <p class="contener4-paraghraph1">STILL NOT CONVINCED</p>
+            <p class="contener4-paraghraph2">Read what our customers says about us?</p>
+
+            <div class="contener4-mainbox">
+                <div class="contener4-box1">
+                    <div class="contener4-imgbox"><img src="img/testi-1.webp" alt="" class="img3"></div><br>
+                    <p class="contener4-paraghraph3"><span class="span1">Ms. Vasantlakshmi Bodepudi </span> <img
+                            src="img/usa-flag.jpg" alt=""> USA United States</p>
+
+                    <div class="contener4-paraghraph4">Ms. Vasantlakshmi Bodepudi booked the Golden
+                        Triangle Tour with IHPL during their visit from the
+                        United States of America. She visited India with her family.
+                        They started their journey from the national capital
+                        They enjoyed the shopping in Chandni Chowk in Delhi,
+                        morning visit to Taj Mahal, elephant ride in Jaipur,
+                        and were delighted with the hospitality of IHPL.
+                        They enjoyed the shopping in Chandni Chowk in Delhi,
+                        morning visit to Taj Mahal, elephant ride in Jaipur,
+                        and were delighted with the hospitality of IHPL.
+
+                    </div>
+
+                </div>
+
+                <div class="contener4-box2">
+                    <div class="contener4-imgbox2"><img src="img/yt-fb-img-4.jpg" alt="" class="img3"></div>
+                    <div class="contener4-textbox">
+                        <p class="contener4-text1">Mr. Rahul Sharma & Mr. Ravi Kesri</p>
+                        <p class="contener4-text2">Country: India</p>
+                        <p class="contener4-text3">Tour - Deccan Odyssey Luxury Train Tour</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contener5">
+            <p class="contener5-heading">Places To Visit in India by Month</p>
+            <div class="contener5-line"></div>
+
+            <div class="contener5-largh-box">
+
+                <a href="#" class="contener5-box1">
+                    <div>JAN
+                        
+                    </div>
+                </a>
+
+                <a href="#" class="contener5-box2">
+                    <div>FEB</div>
+                </a>
+                <a href="#" class="contener5-box3">
+                    <div>MAR</div>
+                </a>
+                <a href="#" class="contener5-box4">
+                    <div>APR</div>
+                </a>
+                <a href="#" class="contener5-box5">
+                    <div>MAY</div>
+                </a>
+                <a href="#" class="contener5-box6">
+                    <div>JUN</div>
+                </a>
+                <a href="#" class="contener5-box7">
+                    <div>JUL</div>
+                </a>
+                <a href="#" class="contener5-box8">
+                    <div>AUG</div>
+                </a>
+                <a href="#" class="contener5-box9">
+                    <div>SEP</div>
+                </a>
+                <a href="#" class="contener5-box10">
+                    <div>OCT</div>
+                </a>
+                <a href="#" class="contener5-box11">
+                    <div>NOV</div>
+                </a>
+                <a href="#" class="contener5-box12">
+                    <div>DEC</div>
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="contener6">
+            <div class="contener6-main-box">
+                <div class="contener6-box1">
+                    <p class="contener6-paragraph1">Get Updates & More</p>
+                    <p class="contener6-paragraph2">Subscribe Our Newsletter for get latest updates</p>
+                </div>
+
+                <div class="contener6-box2">
+                    <div class="contener6-searchbox">
+                        <div class="contener6-input-box"><input type="text" class="contener6-input"
+                                placeholder=" Enter Your Email Address"></div>
+                        <a href="#" class="contener6-sub">
+                            <div>Subscribe Now</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contener6-box3">
+                    <div class="contener6-text">FOLLOW US:</div>
+
+                    <div class="contener6-logo-box">
+
+                        <div class="contener6-logo"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="contener6-logo"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="contener6-logo"><i class="fa-brands fa-instagram"></i></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contener7">
+
+            <a href="#" class="a1">About Us</a> | <a href="#" class="a1">Terms & Conditions</a> | <a href="#"
+                class="a1">Good to know</a> |
+            <a href="#" class="a1"> Special Offers</a><img src="img/blink.gif" alt=""> | <a href="#" class="a1">Contact
+                Us</a> | <a href="#" class="a1">Sitemap</a> |
+            <a href="#" class="a1">Blog</a> | <a href="#" class="a1">Client Testimonials</a> | <a href="#"
+                class="a1">Inquiry Now</a>
+
+        </div>
+
+
+        <div class="contener8">
+            <div class="contener8-main-box">
+                <div class="contener8-image-box1">
+                    <img src="img/ftag.jpg" alt="" class="contener8-image">
+                </div>
+
+                <div class="contener8-image-box2">
+                    <img src="img/company.jpg" alt="" class="contener8-image2">
+                    <p class="contener8-text">Made by { Chandra Prakash }</p>
+                    <p class="contener8-text">Mukund Patti Khamaria Bhadohi-221306(INDIA)</p>
+                    <p class="contener8-text">Mobile: 7785903821</p>
+                </div>
+
+                <div class="contener8-image-box3"><img src="img/ihpl-man.png" alt="" class="contener8-image3"></div>
+
+                <div class="contener8-image-box4"><img src="img/member1.jpg" alt="" class="contener8-image4"></div>
+
+                <div class="contener8-image-box5"><img src="img/payment.jpg" alt="" class="contener8-image5"></div>
+
+            </div>
+        </div>
+
+        <div class="contener9">
+            <div class="contener9-text">Step out and travel with an ideal holiday planning done by our experts based on
+                personalized experiences over guidebooks</div>
+            <div class="contener10-img"><img src="img/special-offer.png" alt=""></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
